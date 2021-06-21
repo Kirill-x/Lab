@@ -10,12 +10,13 @@ using namespace std;
 double avg_harm(double x, double y)
 {
     double avg;
-    x = -(int)x;
-    y = -(int)y;
-    avg = (x + y) / 2;
-    avg = -(int)avg;
+    x = 1/x;
+    y = 1/y;
+    avg = 2/(x + y);
+
     return avg;
 }
+
 
 void main()
 {
